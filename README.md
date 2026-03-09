@@ -21,6 +21,9 @@ This repository focuses on the design, analysis, and optimization of supersonic 
 - Ansys Fluent solver is used with ideal gas settings and slip boundary so as to validate the results using Theta-Beta-M relations as given in Anderson High Speed Gas Dynamics.
 - Pressure far fields are taken as boundary conditions to accurately simulate the setup.
 - Pressure recovery ratio is calculated using probes set at 2 different line intergals, one at inlet and one at exit. Point probes are also set to calculate precide pressure recovery ratio.
+- The $\theta$ - $\beta$ - M relation is given by:
+
+  $\tan\theta = 2\cot\beta \frac{M^2 \sin^2\beta - 1}{M^2 (\gamma + \cos 2\beta) + 2}$
 - Half angle of the wedge is taken as 12 degrees and by the shock relation we get Beta angle = 36 degrees.
 - **Outcome** - Reovery Mach number is found to be 1.74 and Recovery pressure ratio is found to be 2.42 which is 0.5% lesser than the value predicted by Compressible Shock Pressure relations.
 
